@@ -1,0 +1,65 @@
+.header {
+  height: 70px;
+  width: 100vw;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a0a0f9;
+  /* background-color: #1a1a1a; */
+}
+
+.icon {
+  position: relative;
+  font-size: 95%;
+  width: 100px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin: 5%;
+  cursor: pointer;
+}
+.icon img {
+  width: 45%;
+  margin-right: 5%;
+}
+
+/* .gradient-text {
+  background: linear-gradient(45deg, #ff6ec7, #00ffff);
+  background: linear-gradient(45deg, #fffa70, #ff00ff);
+  -webkit-background-clip: text;
+  color: transparent;
+} */
+
+.profile{
+    margin: 5%;
+    font-size: 20px;
+}
+
+/* Basic button styling */
+.button {
+    position: relative;
+    padding: 8px 10px;
+    font-size: 70%;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+    background-color: #4169E1;
+    color: #fff; /* Text color */
+}
+  
+  /* Hover state */
+.button:hover {
+    background-color: #005c99;
+}
+  
+  /* Optional: Active (clicked) state */
+.button:active {
+    background-color: #004080;
+}
+  

@@ -1,0 +1,100 @@
+.outerContainer {
+  margin: 5vh 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.albumListMain {
+  width: 70vw;
+}
+
+.titleBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleBar .text {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* Styling for the button used to add albums */
+.titleBar .addbtn {
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  padding: 8px 10px;
+
+  /* background-color: rgba(0, 119, 255, 0.1);
+    border: 2px solid #07f;
+    color: #07f; */
+  /* toggle style  */
+  /* background-color: rgba(255,19,0,.1);
+    border: 2px solid #ff1300;
+    color: #ff1300; */
+}
+
+.albumList {
+  display: grid;
+  gap: 30px;
+  grid-auto-flow: row;
+  grid-auto-rows: 150px;
+  grid-template: repeat(1, 150px) / repeat(auto-fit, minmax(120px, 0.5fr));
+  margin-bottom: 100px;
+}
+
+.album {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  margin-block: 30px;
+  border: 5px solid #eee;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Styling for the container holding each album */
+  transition: border-color 0.3s;
+}
+
+.album img {
+  margin-bottom: 30px;
+  width: 50px;
+}
+
+.album span {
+  background-color: #eee;
+  font-size: 1.1rem;
+  font-weight: 700;
+  justify-self: baseline;
+  padding-block: 5px;
+  text-align: center;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.album:hover {
+  /* Styling when hovering over the album container */
+  border: 5px solid rgba(75, 75, 275, 0.9);
+  /* background-color: skyblue; */
+}
+
+.album:hover span {
+  background-color: rgba(75, 75, 275, 0.9);
+  color: white;
+}
+
+
+/*==================== MEDIA QUERIES ====================*/
+/* For medium devices */
+@media screen and (max-width:768px){
+  .albumListMain {
+    width: 90vw;
+  }
+}
